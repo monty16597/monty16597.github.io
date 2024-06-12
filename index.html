@@ -2,21 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <script>
-        // Function to check if the domain starts with "www."
-        function redirectToWWW() {
-            var currentDomain = window.location.hostname;
-            if (!currentDomain.startsWith("www.") && currentDomain !== "localhost") {
-                var newUrl = "https://www." + currentDomain + window.location.pathname + window.location.search;
-                window.location.href = newUrl;
-            }
-        }
-
-        // Call the function when the page loads
-        window.onload = function() {
-            redirectToWWW();
-        };
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Just a guy who is DevOps for the fun." />
     <meta name="author" content="Manjeetsinh Alonja" />
