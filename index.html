@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script>
+        // Function to check if the domain starts with "www."
+        function redirectToWWW() {
+            var currentDomain = window.location.hostname;
+            if (!currentDomain.startsWith("www.") && currentDomain !== "localhost") {
+                var newUrl = "https://www." + currentDomain + window.location.pathname + window.location.search;
+                window.location.href = newUrl;
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = function() {
+            redirectToWWW();
+        };
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Just a guy who is DevOps for the fun." />
+    <meta name="author" content="Manjeetsinh Alonja" />
+    <title>Manjeetsinh Alonja - DevOps Engineer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/android-chrome-512x512.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body id="page-top">
+<link rel="manifest" href="site.menifest">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">MANJEETSINH ALONJA</span>
+        <span class="d-none d-lg-block">
+                  <img
+                          class="img-fluid rounded-circle img-profile mx-auto mb-2 bg-white"
+                          src="./assets/img/profile.jpeg"
+                          alt="Manjeetsinh Alonja"
+                          style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.2)'"  onmouseout="this.style.transform='scale(1)'"  />
+        </span>
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-dark">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">certifications</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">projects</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Manjeetsinh
+                <span class="text-primary">Alonja</span>
+            </h1>
+            <div class="subheading mb-5">
+                North York, Ontario, Canada · +15483980363 · <a href="mailto:alonjamohit77@gmail.com">alonjamohit77@gmail.com</a>
+            </div>
+            <p class="lead mb-5">Experienced DevOps professional with nearly 4 years of expertise in service-based and
+                product-based startup industries. Proficient in designing diverse architectural systems, including
+                microservice-based, distributed, and monolithic, using a range of DevOps technologies.
+                Extensive experience working across various virtualization and containerization platforms,
+                including Docker, Kubernetes, ESXi, and mobile emulators (Android/iOS). Automated MLOps
+                with Jenkins for cloud-based ML infrastructure, covering model training and hosting. Skilled in
+                leading DevOps tools such as AWS, Terraform, Jenkins, GitHub Actions, Gitlab CICD, Argo CD,
+                Kubernetes, and Docker, as I have worked on these techs for almost 4 years. In addition,
+                Developed centralized logging and monitoring systems, including ELK,
+                Graylog-Elastic-Logstash, AWS CloudWatch, DataDog, and SumoLogic, for nearly 2 years.
+                Proficient in Python, bash, Golang, and Java programming languages. Created centralized
+                automation pipelines for app and infrastructure development over 3 years, implementing highly
+                available, auto-scalable systems for applications with 25,000+ active users.
+            </p>
+            <div class="social-icons">
+                <a class="social-icon js-scroll-trigger" target="_blank" href="https://www.linkedin.com/in/manjeetsinh-alonja"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon js-scroll-trigger" target="_blank" href="https://github.com/monty16597"><i class="fab fa-github"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Experience -->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+            <!-- DevOps Engineer - Lambdatest -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">DevOps Engineer</h3>
+                    <div class="subheading mb-3">Lambdatest, Noida, India</div>
+                    <ul class="list-inline justified-list">
+                        <!-- Experience details here -->
+                    </ul>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">December 2021 - March 2023</span></div>
+            </div>
+
+            <!-- DevOps Engineer - EkZero -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">DevOps Engineer</h3>
+                    <div class="subheading mb-3">EkZero, Vadodara, India</div>
+                    <ul class="list-inline justified-list">
+                        <!-- Experience details here -->
+                    </ul>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">April 2021 - December 2021</span></div>
+            </div>
+
+            <!-- DevOps Engineer - OpenXcell -->
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">DevOps Engineer</h3>
+                    <div class="subheading mb-3">OpenXcell (CMMI Level 3), Ahmedabad, India</div>
+                    <ul class="list-inline justified-list">
+                        <!-- Experience details here -->
+                    </ul>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">July 2019 - March 2021</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+
+            <!-- Post Graduation -->
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Post Graduation, DevOps for Cloud Computing</h3>
+                    <div class="subheading mb-3">Lambton College, Toronto, Canada</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">September 2023 - present</span></div>
+            </div>
+
+            <!-- Bachelor's Degree -->
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Bachelor Of Engineering, Information and Technology</h3>
+                    <div class="subheading mb-3">Gujarat Technical University, Gujarat, India</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2015 - June 2019</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Cloud</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">AWS</li>
+            </ul>
+            <div class="subheading mb-3">CI-CD</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Jenkins</li>
+                <li class="list-inline-item">GitHub Actions/Workflows</li>
+                <li class="list-inline-item">ArgoCD</li>
+                <li class="list-inline-item">Gitlab CI-CD</li>
+            </ul>
+            <div class="subheading mb-3">Virtualization Technologies</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Docker</li>
+                <li class="list-inline-item">Kubernetes</li>
+                <li class="list-inline-item">Containerization</li>
+                <li class="list-inline-item">Vmware</li>
+            </ul>
+            <div class="subheading mb-3">Configuration Management</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Terraform</li>
+                <li class="list-inline-item">Ansible</li>
+                <li class="list-inline-item">Hashicorp Vault</li>
+            </ul>
+            <div class="subheading mb-3">Operating Systems</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Windows</li>
+                <li class="list-inline-item">Linux</li>
+            </ul>
+            <div class="subheading mb-3">Webservers</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Nginx</li>
+                <li class="list-inline-item">Apache</li>
+                <li class="list-inline-item">Tomcat</li>
+            </ul>
+            <div class="subheading mb-3">Databases</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Redis</li>
+                <li class="list-inline-item">MySQL</li>
+                <li class="list-inline-item">MongoDB</li>
+                <li class="list-inline-item">Postgres</li>
+            </ul>
+            <div class="subheading mb-3">Programming and scripting languages</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Python</li>
+                <li class="list-inline-item">BASH/Shell Scripting</li>
+                <li class="list-inline-item">NodeJs</li>
+                <li class="list-inline-item">Java</li>
+                <li class="list-inline-item">Golang</li>
+                <li class="list-inline-item">HTML & CSS</li>
+                <li class="list-inline-item">Javascript</li>
+            </ul>
+            <div class="subheading mb-3">Monitoring & Logging</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Datadog</li>
+                <li class="list-inline-item">Sumologic</li>
+                <li class="list-inline-item">Prometheus</li>
+                <li class="list-inline-item">Grafana</li>
+                <li class="list-inline-item">Icinga</li>
+                <li class="list-inline-item">Nagios</li>
+            </ul>
+            <div class="subheading mb-3">Authentication Technologies</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">Active Directory</li>
+                <li class="list-inline-item">LDAP</li>
+                <li class="list-inline-item">Keycloak</li>
+                <li class="list-inline-item">OAuth</li>
+            </ul>
+            <div class="subheading mb-3">Other</div>
+            <ul class="list-inline">
+                <li class="list-inline-item">System Design</li>
+                <li class="list-inline-item">Open-source Contribution</li>
+                <li class="list-inline-item">Platform Engineering</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Interests -->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <div class="subheading mb-3">Profesional interests</div>
+            <ul>
+                <li>Technology and innovation</li>
+                <li>Continuous learning and self-improvement</li>
+                <li>Open-source contributions and community involvement</li>
+                <li>Problem-solving and troubleshooting</li>
+                <li>Reading tech blogs and articles</li>
+                <li>Exploring new programming languages and frameworks</li>
+                <li>Creating custom solutions or services</li>
+            </ul>
+            <div class="subheading mb-3">Other interests</div>
+            <ul>
+                <li>Cricket</li>
+                <li>F1 racing (Trying to learn)</li>
+                <li>Volleyball</li>
+                <li>Travelling</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+    </section>
+    <!-- certifications -->
+    <section class="resume-section" id="certifications">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Certifications</h2>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0704fc18-2067-469d-8eec-22af3393aa08" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="77dc87ad-7c35-4c2d-b4b7-c921cba72208" data-share-badge-host="https://www.credly.com"></div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Projects</h2>
+
+            <!-- GitHub Projects -->
+            <h3 class="mb-3">GitHub Projects</h3>
+            <ul>
+                <li>
+                    <strong>Python AWS Mock CI/CD Template:</strong> Created a template on Python to show how to use Localstack for running unit tests on a simulated AWS environment. This project helps in adopting cost-optimizing solutions in DevOps culture.
+                    <a href="https://github.com/monty16597/python-AWS-mock-cicd-template">Link</a>
+                </li>
+                <li>
+                    <strong>Event Driven System with Redis Stream and Flask APIs:</strong> Term project developed using Redis stream and Flask APIs to create publishers and consumers for interacting with the system and processing events.
+                    <a href="https://github.com/monty16597/event-driven-system-redis-stream">Link</a>
+                </li>
+                <li>
+                    <strong>Big Data Power Consumption Regression Model:</strong> Worked on a machine learning model to predict the power consumption of Tetuan City for 3 different zones using XGBRegression model and Flask for user interaction.
+                    <a href="https://github.com/monty16597/bigdata-power-consumption-regression-model">Link</a>
+                </li>
+                <li>
+                    <strong>Terraform PR Commenter:</strong> Extended an open-source project to achieve directory-based scanning in Terraform CI/CD pipeline.
+                    <a href="https://github.com/monty16597/terraform-pr-commenter">Link</a>
+                </li>
+                <li>
+                    <strong>OpenVPN Web UI Extension:</strong> Extended an OpenVPN GUI open-source project to include revocation functionality.
+                    <a href="https://github.com/intrigues/openvpn-web-ui">Link</a>
+                </li>
+                <li>
+                    <strong>AWS API Simulator:</strong> Contributed to a project simulating AWS services requests and response model, mainly in Python.
+                    <a href="https://github.com/getmoto/moto">Link</a>
+                </li>
+                <li>
+                    <strong>Localstack:</strong> Contributed to a popular AWS simulated project, Localstack, by developing AWS services to mimic the actual AWS and fixing Terraform and Serverless framework integration.
+                    <a href="https://github.com/localstack/localstack">Link</a>
+                </li>
+                <li>
+                    <strong>Terraform Kops Automation:</strong> Created a template project to automate Kops Kubernetes cluster using Terraform.
+                    <a href="https://github.com/monty16597/Terraform-kops">Link</a>
+                </li>
+                <li>
+                    <strong>GitHub Action for EC2 Start/Stop:</strong> Created a custom GitHub action using AWS CLI to start and stop an AWS instance.
+                    <a href="https://github.com/monty16597/gh-action-ec2-start-stop">Link</a>
+                </li>
+            </ul>
+
+            <!-- Volunteer Work -->
+            <h3 class="mt-5 mb-3">Volunteer Work</h3>
+            <ul>
+                <li>
+                    <strong>Contributed to Localstack:</strong> Contributed to the popular open-source project, Localstack, by developing AWS services to mimic the actual AWS.
+                    <a href="https://github.com/localstack/localstack">Link</a>
+                </li>
+                <li>
+                    <strong>Contributed to AWS API Simulator:</strong> Fixed various types of APIs which simulate AWS services request and response model, contributing to the backbone of Localstack.
+                    <a href="https://github.com/getmoto/moto">Link</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
