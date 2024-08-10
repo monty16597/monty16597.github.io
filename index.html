@@ -14,6 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!-- jQuery and Bootstrap JS (for tooltips) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/monty16597/monty16597.github.io/main/assets/img/favicon-16x16.png">
@@ -26,12 +32,12 @@
 <body id="page-top">
 <link rel="manifest" href="site.menifest">
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+<nav class="navbar navbar-expand-lg fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">MANJEETSINH ALONJA</span>
-        <span class="d-none d-lg-block">
+        <span class="d-none d-lg-block hero">
                   <img
-                          class="img-fluid rounded-circle img-profile mx-auto mb-2 bg-white"
+                          class="img-fluid rounded-circle img-profile mx-auto mb-2"
                           src="https://raw.githubusercontent.com/monty16597/monty16597.github.io/main/assets/img/profile.JPEG"
                           alt="Manjeetsinh Alonja"
                           style="transition: transform 0.3s ease-in-out;"  onmouseover="this.style.transform='scale(1.2)'"  onmouseout="this.style.transform='scale(1)'"  />
@@ -40,12 +46,11 @@
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav navbar-dark">
+        <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">certifications</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">projects</a></li>
         </ul>
@@ -56,12 +61,14 @@
     <!-- About-->
     <section class="resume-section" id="about">
         <div class="resume-section-content">
-            <h1 class="mb-0">
-                Manjeetsinh
-                <span class="text-primary">Alonja</span>
-            </h1>
+            <div class="sticky-header">
+                <h1 class="mb-0">
+                    Manjeetsinh
+                    <span class="strong-text">Alonja</span>
+                </h1>
+            </div>
             <div class="subheading mb-5">
-                North York, Ontario, Canada · +15483980363 · <a href="mailto:alonjamohit77@gmail.com">alonjamohit77@gmail.com</a>
+                North York, Ontario, Canada · +15483980363 · <a class="email" href="mailto:alonjamohit77@gmail.com">alonjamohit77@gmail.com</a>
             </div>
             <p class="lead mb-5">Experienced DevOps professional with nearly 4 years of expertise in service-based and
                 product-based startup industries. Proficient in designing diverse architectural systems, including
@@ -78,161 +85,50 @@
                 available, auto-scalable systems for applications with 25,000+ active users.
             </p>
             <div class="social-icons">
-                <a class="social-icon js-scroll-trigger" target="_blank" href="https://www.linkedin.com/in/manjeetsinh-alonja"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social-icon js-scroll-trigger" target="_blank" href="https://github.com/monty16597"><i class="fab fa-github"></i></a>
-            </div>
-
+                <a class="social-icon js-scroll-trigger" data-toggle="tooltip" data-placement="top" title="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/manjeetsinh-alonja"><i class="fa-brands fa-linkedin" style="color: #FBFADA;"></i></i></a>
+                <a class="social-icon js-scroll-trigger" data-toggle="tooltip" data-placement="top" title="My Github" target="_blank" href="https://github.com/monty16597"><i class="fa-brands fa-github" style="color: #FBFADA;"></i></a>
+                <a class="social-icon js-scroll-trigger" data-toggle="tooltip" data-placement="top" title="My Resume" target="_blank" href="https://raw.githubusercontent.com/monty16597/monty16597.github.io/main/assets/docs/resume.pdf"><i class="fa-solid fa-file" style="color: #FBFADA;"></i></a>
+                <!-- Generated markup by the plugin -->
+                <div class="tooltip bs-tooltip-top" role="tooltip">
+                    <div class="arrow"></div>
+                    <div class="tooltip-inner">
+                    </div>
+                </div>
         </div>
     </section>
-    <!-- Experience -->
-    <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Experience</h2>
-            <!-- DevOps Engineer - Lambdatest -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">DevOps Engineer</h3>
-                    <div class="subheading mb-3">Lambdatest, Noida, India</div>
-                    <ul class="list-inline justified-list">
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">December 2021 - March 2023</span></div>
-            </div>
-
-            <!-- DevOps Engineer - EkZero -->
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">DevOps Engineer</h3>
-                    <div class="subheading mb-3">EkZero, Vadodara, India</div>
-                    <ul class="list-inline justified-list">
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">April 2021 - December 2021</span></div>
-            </div>
-
-            <!-- DevOps Engineer - OpenXcell -->
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">DevOps Engineer</h3>
-                    <div class="subheading mb-3">OpenXcell (CMMI Level 3), Ahmedabad, India</div>
-                    <ul class="list-inline justified-list">
-                    </ul>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">July 2019 - March 2021</span></div>
-            </div>
-        </div>
-    </section>
-
     <!-- Education -->
     <section class="resume-section" id="education">
         <div class="resume-section-content">
-            <h2 class="mb-5">Education</h2>
+            <div class="sticky-header">
+                <h2>Education</h2>
+            </div>
 
             <!-- Post Graduation -->
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Post Graduation, DevOps for Cloud Computing</h3>
-                    <div class="subheading mb-3">Lambton College, Toronto, Canada</div>
+                    <h4>Lambton College, Toronto, Canada</h4>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">September 2023 - present</span></div>
+                <div class="flex-shrink-0"><span class="dates">September 2023 - present</span></div>
             </div>
 
             <!-- Bachelor's Degree -->
             <div class="d-flex flex-column flex-md-row justify-content-between">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Bachelor Of Engineering, Information and Technology</h3>
-                    <div class="subheading mb-3">Gujarat Technical University, Gujarat, India</div>
+                    <h4>Gujarat Technical University, Gujarat, India</h4>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">August 2015 - June 2019</span></div>
+                <div class="flex-shrink-0"><span class="dates">August 2015 - June 2019</span></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills-->
-    <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Skills</h2>
-            <div class="subheading mb-3">Cloud</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">AWS</li>
-            </ul>
-            <div class="subheading mb-3">CI-CD</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Jenkins</li>
-                <li class="list-inline-item">GitHub Actions/Workflows</li>
-                <li class="list-inline-item">ArgoCD</li>
-                <li class="list-inline-item">Gitlab CI-CD</li>
-            </ul>
-            <div class="subheading mb-3">Virtualization Technologies</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Docker</li>
-                <li class="list-inline-item">Kubernetes</li>
-                <li class="list-inline-item">Containerization</li>
-                <li class="list-inline-item">Vmware</li>
-            </ul>
-            <div class="subheading mb-3">Configuration Management</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Terraform</li>
-                <li class="list-inline-item">Ansible</li>
-                <li class="list-inline-item">Hashicorp Vault</li>
-            </ul>
-            <div class="subheading mb-3">Operating Systems</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Windows</li>
-                <li class="list-inline-item">Linux</li>
-            </ul>
-            <div class="subheading mb-3">Webservers</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Nginx</li>
-                <li class="list-inline-item">Apache</li>
-                <li class="list-inline-item">Tomcat</li>
-            </ul>
-            <div class="subheading mb-3">Databases</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Redis</li>
-                <li class="list-inline-item">MySQL</li>
-                <li class="list-inline-item">MongoDB</li>
-                <li class="list-inline-item">Postgres</li>
-            </ul>
-            <div class="subheading mb-3">Programming and scripting languages</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Python</li>
-                <li class="list-inline-item">BASH/Shell Scripting</li>
-                <li class="list-inline-item">NodeJs</li>
-                <li class="list-inline-item">Java</li>
-                <li class="list-inline-item">Golang</li>
-                <li class="list-inline-item">HTML & CSS</li>
-                <li class="list-inline-item">Javascript</li>
-            </ul>
-            <div class="subheading mb-3">Monitoring & Logging</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Datadog</li>
-                <li class="list-inline-item">Sumologic</li>
-                <li class="list-inline-item">Prometheus</li>
-                <li class="list-inline-item">Grafana</li>
-                <li class="list-inline-item">Icinga</li>
-                <li class="list-inline-item">Nagios</li>
-            </ul>
-            <div class="subheading mb-3">Authentication Technologies</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">Active Directory</li>
-                <li class="list-inline-item">LDAP</li>
-                <li class="list-inline-item">Keycloak</li>
-                <li class="list-inline-item">OAuth</li>
-            </ul>
-            <div class="subheading mb-3">Other</div>
-            <ul class="list-inline">
-                <li class="list-inline-item">System Design</li>
-                <li class="list-inline-item">Open-source Contribution</li>
-                <li class="list-inline-item">Platform Engineering</li>
-            </ul>
         </div>
     </section>
     <!-- Interests -->
     <section class="resume-section" id="interests">
         <div class="resume-section-content">
-            <h2 class="mb-5">Interests</h2>
-            <div class="subheading mb-3">Profesional interests</div>
+            <div class="sticky-header">
+                <h2>Interests</h2>
+            </div>
+            <h3>Profesional interests</h3>
             <ul>
                 <li>Technology and innovation</li>
                 <li>Continuous learning and self-improvement</li>
@@ -242,7 +138,7 @@
                 <li>Exploring new programming languages and frameworks</li>
                 <li>Creating custom solutions or services</li>
             </ul>
-            <div class="subheading mb-3">Other interests</div>
+            <h3>Other interests</h3>
             <ul>
                 <li>Cricket</li>
                 <li>F1 racing (Trying to learn)</li>
@@ -252,20 +148,109 @@
             </ul>
         </div>
     </section>
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <div class="sticky-header">
+                <h2>Skills</h2>
+            </div>
+            <h3>Cloud</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">AWS</li>
+            </ul>
+            <h3>CI-CD</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Jenkins</li>
+                <li class="list-inline-item">GitHub Actions/Workflows</li>
+                <li class="list-inline-item">ArgoCD</li>
+                <li class="list-inline-item">Gitlab CI-CD</li>
+            </ul>
+            <h3>Virtualization an Containerization Technologies</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Docker</li>
+                <li class="list-inline-item">Kubernetes</li>
+                <li class="list-inline-item">Containerization</li>
+                <li class="list-inline-item">Vmware</li>
+            </ul>
+            <h3>Configuration/Secret Management and infrastructure as Code</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Terraform</li>
+                <li class="list-inline-item">Terragrunt</li>
+                <li class="list-inline-item">Ansible</li>
+                <li class="list-inline-item">Hashicorp Vault</li>
+            </ul>
+            <h3>Operating Systems</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Windows</li>
+                <li class="list-inline-item">Linux</li>
+            </ul>
+            <h3>Webservers</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Nginx</li>
+                <li class="list-inline-item">Apache</li>
+                <li class="list-inline-item">Tomcat</li>
+                <li class="list-inline-item">IIS</li>
+            </ul>
+            <h3>Databases</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Redis</li>
+                <li class="list-inline-item">MySQL</li>
+                <li class="list-inline-item">MongoDB</li>
+                <li class="list-inline-item">Postgres</li>
+                <li class="list-inline-item">DynamoDB</li>
+            </ul>
+            <h3>Programming and scripting languages</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Python</li>
+                <li class="list-inline-item">BASH/Shell Scripting</li>
+                <li class="list-inline-item">NodeJs</li>
+                <li class="list-inline-item">Java</li>
+                <li class="list-inline-item">Golang</li>
+                <li class="list-inline-item">HTML & CSS</li>
+                <li class="list-inline-item">Javascript</li>
+            </ul>
+            <h3>Monitoring & Logging</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Datadog</li>
+                <li class="list-inline-item">Sumologic</li>
+                <li class="list-inline-item">Prometheus</li>
+                <li class="list-inline-item">Grafana</li>
+                <li class="list-inline-item">Icinga</li>
+                <li class="list-inline-item">Nagios</li>
+            </ul>
+            <h3>Authentication Technologies</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Active Directory</li>
+                <li class="list-inline-item">LDAP</li>
+                <li class="list-inline-item">Keycloak</li>
+                <li class="list-inline-item">OAuth</li>
+            </ul>
+            <h3>Other</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">Git</li>
+                <li class="list-inline-item">System Design</li>
+                <li class="list-inline-item">Open-source Contribution</li>
+                <li class="list-inline-item">Platform Engineering</li>
+            </ul>
+        </div>
+    </section>
     <!-- certifications -->
     <section class="resume-section" id="certifications">
         <div class="resume-section-content">
-            <h2 class="mb-5">Certifications</h2>
+            <div class="sticky-header">
+                <h2>Certifications</h2>
+            </div>
             <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0704fc18-2067-469d-8eec-22af3393aa08" data-share-badge-host="https://www.credly.com"></div>
             <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="77dc87ad-7c35-4c2d-b4b7-c921cba72208" data-share-badge-host="https://www.credly.com"></div>
             <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         </div>
     </section>
-
     <!-- Projects -->
     <section class="resume-section" id="projects">
         <div class="resume-section-content">
-            <h2 class="mb-5">Projects</h2>
+            <div class="sticky-header">
+                <h2>Projects</h2>
+            </div>
 
             <!-- GitHub Projects -->
             <h3 class="mb-3">GitHub Projects</h3>
@@ -322,12 +307,16 @@
             </ul>
         </div>
     </section>
-
-
 </div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+<script>
+    // Initialize Bootstrap tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
 </body>
 </html>
