@@ -47,6 +47,18 @@ body {
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+    .nav-link:hover {
+        color: #ADBC9F;
+        transform: scale(1);
+    }
+
+    .nav-item .nav-link.active {
+        color: #FBFADA;
+        transform: scale(1);
+    }
+}
+
 h1 {
     color: #436850;
 }
