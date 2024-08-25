@@ -4,13 +4,8 @@ body {
 
 #sideNav {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    /* width: 250px; */
     background-color: #12372A;
     z-index: 1000;
-    /* padding-top: 20px; */
 }
 
 .container-fluid {
@@ -20,12 +15,18 @@ body {
 .sticky-header {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 0px;
     background-color: white;
     z-index: 999;
     padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .sticky-header {
+        top: 0px;
+        padding-top: 50px;
+    }
+}
 .rounded-circle {
     background-color: #FBFADA;
 }
@@ -48,6 +49,12 @@ body {
 
 h1 {
     color: #436850;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size:70px;
+    }
 }
 
 h2 {
@@ -87,3 +94,27 @@ h4 {
 .social-icon:hover {
     transform: scale(1.2);
 }
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+
+.certification-item {
+    flex: 1 1 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification-item img {
+    width: 150px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.img-profile {
+    color: #FBFADA;
+}
+
