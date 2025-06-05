@@ -22,8 +22,6 @@ export default function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const parallaxValue = scrollY * 0.2;
-
   return (
     <ThemeProvider>
       <div className="relative min-h-screen overflow-hidden">
