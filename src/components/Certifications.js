@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import certiAzureImg from "../assets/img/certification-azure.png";
 
 const certifications = [
   {
