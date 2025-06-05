@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    @apply bg-customBodyBg text-gray-200 font-sans;
+    background-image: 
+      radial-gradient(circle at 30% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 30%),
+      radial-gradient(circle at 80% 80%, rgba(56, 189, 248, 0.15) 0%, transparent 30%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  code, pre {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass-primary backdrop-blur-md rounded-xl border border-glass-border;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+    &:hover {
+      @apply border-glass-accent shadow-lg;
+      box-shadow: 0 8px 32px 0 rgba(56, 189, 248, 0.2);
+      transform: translateY(-4px);
+    }
+  }
+  
+  .neon-border {
+    @apply relative rounded-xl transition-all duration-300;
+    &::before {
+      content: '';
+      @apply absolute -inset-0.5 rounded-xl bg-gradient-to-r from-neon-purple to-neon-blue opacity-0 transition-opacity duration-300 -z-10 blur-sm;
+    }
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+  
+  .masked-overflow {
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  }
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.appear-1 { animation-delay: 0.1s; }
+.appear-2 { animation-delay: 0.2s; }
+.appear-3 { animation-delay: 0.3s; }
+.appear-4 { animation-delay: 0.4s; }
+.appear-5 { animation-delay: 0.5s; }
+
+/* Glassmorphic scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-glass-primary backdrop-blur-md;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-glass-accent rounded-full;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-blue;
+}
+
+/* Custom blur effect for background elements */
+.glow-effect {
+  filter: blur(30px);
+  transform: translate3d(0, 0, 0);
+}
+
+.mask-circle {
+    clip-path: circle()
+}
+
+/* Timeline animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.timeline-item:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+/* Pulse animation for timeline icons with custom color */
+.timeline-icon-pulse {
+    --pulse-color: rgba(59, 130, 246, 0.4);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--pulse-color);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.timeline-icon-pulse {
+    animation: pulse 2s infinite;
+}
