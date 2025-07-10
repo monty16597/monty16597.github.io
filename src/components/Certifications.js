@@ -9,7 +9,7 @@ const certifications = [
   {
     name: "Azure Administrator Associate",
     url: "https://learn.microsoft.com/api/credentials/share/en-ca/ManjeetsinhRajendrasinhAlonja-4532/9CAFE7AF2DD52CAD?sharingId=A40090DEAF803874",
-    img: "https://images.credly.com/images/edc0b0d8-55ec-4dfe-9353-22c1bc4e07e8/twitter_thumb_201604_azure-database-administrator-associate-600x600.png",
+    img: "https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/twitter_thumb_201604_azure-administrator-associate-600x600.png",
   },
   {
     name: "HashiCorp Terraform Associate",
