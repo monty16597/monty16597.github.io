@@ -116,6 +116,13 @@ const Projects = () => {
       githubLink: "https://github.com/monty16597/bigdata-power-consumption-regression-model",
       techStack: ["Python", "Flask", "XGBRegression", "Machine Learning"],
       accentColor: "rgba(139, 92, 246, 1)" // Neon purple
+    },
+    {
+      projectName: "Kubernetes GenAI Agentic App",
+      description: "Developed a Streamlit Python app using LangGraph LLM Agent which will take user inputs for creating resources which are supported by integrated Kubernetes Server. It will genrate Manifest File and Apply it to the added Kubernetes Cluster. It uses MCP Server too to interect with Kubernetes Cluster.",
+      githubLink: "https://github.com/monty16597/kubernetes-genai-agent-app",
+      techStack: ["Python", "MCP", "LLM", "LangGraph", "Langchain", "AI", "AI Agent"],
+      accentColor: "rgba(56, 189, 248, 1)" // Neon blue
     }
   ];
 
