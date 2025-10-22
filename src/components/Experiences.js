@@ -6,36 +6,32 @@ const Experiences = () => {
     {
       companyName: "GFL Environmental",
       position: "DevOps Engineer/Platform Engineer",
-      description: "At GFL Environment, I designed a centralized Infrastructure as Code (IaC) solution with Terraform and Terragrunt, reducing development time and errors by 70%, enhanced AWS security with cross-account IAM roles, developed a cloud-based vehicle tracking system, implemented robust CI/CD pipelines, orchestrated AWS Organization setup, and improved application observability with AWS Xray and Cloudwatch.",
+      description: "Built a centralized Terraform and Terragrunt platform across AWS Organizations to accelerate delivery while enforcing cross-account security. Automated vehicle tracking services, CI/CD pipelines, and observability with AWS X-Ray and CloudWatch for real-time fleet insights.",
       duration: "Jan 2025 - Apr 2025",
-      skills: ["Terraform", "Terragrunt", "AWS", "IAM", "AWS Organizations", "Multi-Account Management", "AWS Xray", "Cloudwatch Application Signals", "Vehicle Tracking Systems", "Centralized IaaC", "Centralized CI/CD", "Infrastructure Security"],
       location: "Vaughn, Ontario, Canada",
       accentColor: "rgba(56, 189, 248, 0.8)" // Neon blue
     },
     {
       companyName: "LambdaTest",
       position: "DevOps Engineer",
-      description: "At LambdaTest, I enabled zero downtime deployments on bare metal servers using Python and Ansible, automated device enrollment and Terraform operations, developed CI/CD pipelines for multiple languages, optimized infrastructure costs by 30% annually, managed multi-region operations, and secured Apple device certifications and setups using Vault, Jenkins, and MDM.",
+      description: "Engineered zero-downtime releases on bare metal via Python and Ansible while automating device onboarding and Terraform workflows. Delivered 30% infrastructure cost savings and hardened multi-region MDM, Vault, and Jenkins pipelines for certified Apple device operations.",
       duration: "Dev 2021 - Mar 2023",
-      skills: ["Python", "Ansible", "Device Onboarding Automation (MacOS, Ubuntu, Android, iOS)", "Terraform", "Golang", "Python", "Node.js", "Infrastructure Cost Reduction", "Application Management", "HashiCorp Vault", "Jenkins", "Apple Device Certification Automation", "Mobile Device Management (MDM)", "Bare Metal Server Automation"],
       location: "Noida, Uttar Pradesh, India",
       accentColor: "rgba(139, 92, 246, 0.8)" // Neon purple
     },
     {
       companyName: "EkZero",
       position: "DevOps Engineer",
-      description: "At EkZero, I architected centralized monitoring and logging with the ELK stack, migrated applications to automated IaC deployments, modernized systems for scalability with Kubernetes/ECS, improved infrastructure agility with AWS and containerization, enhanced security with SSO via Keycloak, and led the DevOps team to greater reliability and scalability.",
+      description: "Deployed unified ELK observability and migrated services into automated IaC delivery to drive reliability. Modernized workloads onto Kubernetes and ECS while rolling out Keycloak SSO so teams could scale securely.",
       duration: "Apr 2021 - Dec 2021",
-      skills: ["ELK Stack (Elasticsearch, Logstash, Kibana)", "Terraform", "AWS", "Kubernetes", "ECS", "Scalability", "High Availability", "Single Sign-On (SSO)", "Keycloak", "DevOps Team Management"],
       location: "Vadodara, Gujarat, India",
       accentColor: "rgba(16, 185, 129, 0.8)" // Green
     },
     {
       companyName: "OpenXcell",
       position: "DevOps Engineer",
-      description: "At OpenXcell, I managed DevOps for 12 projects, implemented centralized monitoring with Nagios and Icinga, reduced infrastructure costs by 80% using serverless architecture, improved response times by 75%, protected against high-volume DDoS attacks, developed a machine learning-based backend, accelerated release cycles by 66%, and administered production-grade Kubernetes clusters for multi-tenancy workloads.",
+      description: "Directed DevOps for 12 product teams by centralizing telemetry with Nagios and Icinga and shifting workloads to serverless to cut spend by 80%. Hardened platforms against DDoS, shipped ML-powered services, and kept multi-tenant Kubernetes fleets production ready for faster launches.",
       duration: "Jul 2019 - Feb 2021",
-      skills: ["Multi-Project Oversight", "Nagios", "Icinga", "Datadog", "Elastic Stack", "Cost Optimization", "Response Time Reduction", "DDoS Protection", "Python-Based Backend Development", "Accelerated Release Cycles", "Kops", "Rancher", "Kubeadm", "Kubernetes", "Multi-Tenancy Workloads", "Solution Architecture", "System Design"],
       location: "Ahemdabad, Gujarat, India",
       accentColor: "rgba(217, 119, 6, 0.8)" // Amber
     }
@@ -211,17 +207,6 @@ const Experiences = () => {
                     <p>
                       {exp.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      {exp.skills.map((skill, skillIdx) => (
-                        <span
-                          key={skillIdx}
-                          className="rounded-full bg-[rgba(15,23,42,0.7)] px-3 py-1 text-xs sm:text-sm text-gray-200"
-                          style={{ border: `1px solid rgba(148, 163, 184, 0.2)` }}
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </motion.div>
               </div>
