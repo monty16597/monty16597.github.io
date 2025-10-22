@@ -1,25 +1,28 @@
 import { motion } from "framer-motion";
-
+import badgeCka from "../assets/img/cka.png";
+import badgeAws from "../assets/img/aws_solution_architect_associate.png";
+import badgeAzure from "../assets/img/azure_admin.png";
+import badgeTerraform from "../assets/img/terraform_associate.png";
 const certifications = [
   {
     name: "AWS Solutions Architect",
     url: "https://www.credly.com/badges/0704fc18-2067-469d-8eec-22af3393aa08/public_url",
-    img: "https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/twitter_thumb_201604_image.png",
+    img: badgeAws,
   },
   {
     name: "Azure Administrator Associate",
     url: "https://learn.microsoft.com/api/credentials/share/en-ca/ManjeetsinhRajendrasinhAlonja-4532/9CAFE7AF2DD52CAD?sharingId=A40090DEAF803874",
-    img: "https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/twitter_thumb_201604_azure-administrator-associate-600x600.png",
+    img: badgeAzure,
   },
   {
     name: "HashiCorp Terraform Associate",
     url: "https://www.credly.com/badges/4a91e7f4-e2a1-4ca3-9b46-583bf5751030/public_url",
-    img: "https://images.credly.com/images/99289602-861e-4929-8277-773e63a2fa6f/image.png",
+    img: badgeTerraform,
   },
   {
     name: "Certified Kubernetes Administrator",
     url: "https://www.credly.com/badges/77dc87ad-7c35-4c2d-b4b7-c921cba72208/public_url",
-    img: "https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png",
+    img: badgeCka,
   },
   // Add more certifications as needed
 ];

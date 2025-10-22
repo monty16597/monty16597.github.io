@@ -207,37 +207,6 @@ const Experiences = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  {/* Body */}
-                  <div className="p-5">
-                    <p className="text-gray-300 leading-relaxed mb-5">
-                      {exp.description}
-                    </p>
-                    
-                    {/* Skills */}
-                    <div className="flex flex-wrap gap-2">
-                      {exp.skills.map((skill, idx) => (
-                        <motion.span
-                          key={idx}
-                          className="px-2.5 py-1 rounded-full text-xs"
-                          style={{ 
-                            background: "rgba(31, 41, 55, 0.6)",
-                            color: exp.accentColor,
-                            border: "1px solid",
-                            borderColor: "rgba(55, 65, 81, 0.4)"
-                          }}
-                          whileHover={{ 
-                            scale: 1.05,
-                            background: `rgba(${exp.accentColor.split('(')[1].split(')')[0].split(',').slice(0, 3).join(',')}, 0.15)`,
-                            borderColor: exp.accentColor,
-                            transition: { duration: 0.2 }
-                          }}
-                        >
-                          {skill}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
                 </motion.div>
               </div>
             </div>
