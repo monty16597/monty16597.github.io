@@ -55,16 +55,19 @@ const NavBar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300`}
+      className={`fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-3 sm:py-4 transition-all duration-300`}
     >
       <div 
         className={`max-w-7xl mx-auto rounded-2xl backdrop-blur-md border transition-all duration-300 ${
           isScrolled 
             ? "bg-glass-primary border-glass-border shadow-lg" 
-            : "bg-glass-primary bg-opacity-50 border-transparent"
+            : "bg-glass-primary border-white/10 shadow-md"
         }`}
+        style={{
+          background: isScrolled ? "rgba(15, 23, 42, 0.92)" : "rgba(15, 23, 42, 0.75)",
+        }}
       >
-        <div className="px-4 sm:px-6 py-3 flex items-center justify-between">
+        <div className="px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between">
           {/* Logo/Name */}
           <Link
             to="home"
@@ -138,9 +141,9 @@ const NavBar = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden overflow-hidden"
+              className="md:hidden overflow-hidden backdrop-blur-lg border-t border-white/10 bg-[rgba(15,23,42,0.92)]"
             >
-              <div className="px-4 py-3 space-y-2 border-t border-glass-border bg-glass-secondary">
+              <div className="px-4 py-3 space-y-2">
                 {navLinks.map((link, index) => (
                   <Link
                     key={index}

@@ -104,7 +104,7 @@ const BackgroundElements = ({ scrollY }) => {
       {/* Canvas Background */}
       <canvas 
         ref={canvasRef} 
-        className="fixed inset-0 w-full h-full opacity-40 z-0" 
+        className="fixed inset-0 w-full h-full opacity-40 z-0 pointer-events-none" 
       />
       
       {/* Animated Orbs */}

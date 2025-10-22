@@ -31,16 +31,16 @@ export default function App() {
         {/* Navbar */}
         <NavBar />
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 relative z-10">
           {/* Hero Section */}
-          <section id="home" className="min-h-screen flex items-center">
+          <section id="home" className="min-h-screen flex items-center pb-16 scroll-mt-28 sm:scroll-mt-32">
             <Hero />
           </section>
           
           {/* About Section */}
           <motion.section 
             id="about" 
-            className="py-20"
+            className="py-16 sm:py-20 scroll-mt-28 sm:scroll-mt-32"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -52,7 +52,7 @@ export default function App() {
           {/* Experience Section */}
           <motion.section 
             id="experiences" 
-            className="py-20"
+            className="py-16 sm:py-20 scroll-mt-28 sm:scroll-mt-32"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -64,7 +64,7 @@ export default function App() {
           {/* Certification Section */}
           <motion.section 
             id="certifications" 
-            className="py-20"
+            className="py-16 sm:py-20 scroll-mt-28 sm:scroll-mt-32"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -76,7 +76,7 @@ export default function App() {
           {/* Projects Section */}
           <motion.section 
             id="projects" 
-            className="py-20"
+            className="py-16 sm:py-20 scroll-mt-28 sm:scroll-mt-32"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -88,7 +88,7 @@ export default function App() {
           {/* Contact Section */}
           <motion.section 
             id="contact" 
-            className="py-20 pb-32"
+            className="py-16 sm:py-20 pb-28 sm:pb-32 scroll-mt-28 sm:scroll-mt-32"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}

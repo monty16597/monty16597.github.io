@@ -123,28 +123,28 @@ const Experiences = () => {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative z-10 max-w-5xl mx-auto"
+        className="relative z-10 max-w-5xl mx-auto px-2 sm:px-4"
       >
         {experiences.map((exp, index) => (
           <motion.div 
             key={index}
             variants={item}
-            className="mb-16 last:mb-0 relative"
+            className="mb-12 sm:mb-16 last:mb-0 relative"
           >
             {/* Vertical timeline line except for last item */}
             {index !== experiences.length - 1 && (
               <div 
-                className="absolute left-6 top-16 bottom-0 w-0.5" 
+                className="hidden sm:block absolute left-6 top-16 bottom-0 w-0.5" 
                 style={{ 
                   background: "rgba(55, 65, 81, 0.5)" 
                 }}
               />
             )}
             
-            <div className="flex">
+            <div className="flex flex-col gap-6 sm:flex-row">
               {/* Timeline dot */}
               <motion.div 
-                className="relative flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-6 z-10"
+                className="relative flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full z-10 mx-auto sm:mx-0 sm:mr-6"
                 style={{ 
                   background: "rgba(17, 24, 39, 0.8)",
                   border: `2px solid ${exp.accentColor}`,
@@ -176,11 +176,11 @@ const Experiences = () => {
                   }}
                 >
                   {/* Header */}
-                  <div className="p-5" style={{ 
+                  <div className="p-5 sm:p-6" style={{ 
                     background: `linear-gradient(90deg, rgba(17, 24, 39, 0.7) 0%, rgba(17, 24, 39, 0.3) 100%)`,
                     borderBottom: "1px solid rgba(55, 65, 81, 0.3)"
                   }}>
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                       <div>
                         <h3 className="text-white font-heading font-bold text-xl mb-1">
                           {exp.companyName}
@@ -190,7 +190,7 @@ const Experiences = () => {
                         </h4>
                       </div>
                       
-                      <div className="flex flex-col text-sm mt-2 md:mt-0 md:items-end text-gray-400">
+                      <div className="flex flex-col text-sm mt-1 md:mt-0 md:items-end text-gray-400">
                         <div className="flex items-center gap-1.5">
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -205,6 +205,22 @@ const Experiences = () => {
                           {exp.location}
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div className="p-5 sm:p-6 space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+                    <p>
+                      {exp.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.skills.map((skill, skillIdx) => (
+                        <span
+                          key={skillIdx}
+                          className="rounded-full bg-[rgba(15,23,42,0.7)] px-3 py-1 text-xs sm:text-sm text-gray-200"
+                          style={{ border: `1px solid rgba(148, 163, 184, 0.2)` }}
+                        >
+                          {skill}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </motion.div>

@@ -85,7 +85,7 @@ const Certifications = () => {
         </h2>
       </motion.div>
       <motion.div 
-        className="flex flex-wrap gap-10 items-center justify-center max-4xl mx-auto"
+        className="flex flex-wrap gap-8 sm:gap-10 items-center justify-center max-w-4xl mx-auto px-4"
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -107,11 +107,13 @@ const Certifications = () => {
             <motion.img
               src={cert.img}
               alt={cert.name}
-              className="w-40 h-40 overflow-auto shadow-lg border-0 border-gray-200 group-hover:border-blue-500 transition duration-300"
+              className="h-28 w-28 sm:h-32 sm:w-32 md:h-40 md:w-40 object-contain shadow-lg border-0 border-gray-200 group-hover:border-blue-500 transition duration-300"
             />
-            <motion.span className="w-20 mb-5 text-white font-heading text-xl group-hover:text-blue-600 flex flex-col items-center text-center">
+            <motion.span className="mt-4 text-center text-sm font-heading text-white leading-tight group-hover:text-blue-500 sm:text-base md:text-lg">
               {cert.name.split(" ").map((word, idx) => (
-                <span key={idx}>{word}</span>
+                <span key={idx} className="block">
+                  {word}
+                </span>
               ))}
             </motion.span>
 

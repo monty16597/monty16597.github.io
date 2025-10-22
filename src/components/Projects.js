@@ -28,15 +28,15 @@ const ProjectCard = ({ project }) => {
           }}
         ></div>
         
-        <div className="p-6">
-          <div className="flex justify-between items-start mb-4">
-            <h3 className="text-white font-heading font-bold text-xl">{projectName}</h3>
+        <div className="flex h-full flex-col p-5 sm:p-6">
+          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <h3 className="text-white font-heading font-bold text-lg sm:text-xl leading-snug">{projectName}</h3>
             
             <motion.a 
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-glass-secondary"
+              className="inline-flex items-center justify-center rounded-full bg-glass-secondary p-2 self-start"
               whileHover={{ 
                 backgroundColor: `rgba(${accentColor.split('(')[1].split(')')[0].split(',').slice(0, 3).join(',')}, 0.2)`,
                 transition: { duration: 0.2 }
@@ -48,11 +48,11 @@ const ProjectCard = ({ project }) => {
             </motion.a>
           </div>
           
-          <p className="text-gray-300 mb-5 leading-relaxed">
+          <p className="text-gray-300 mb-5 text-sm sm:text-base leading-relaxed">
             {description}
           </p>
           
-          <div className="flex flex-wrap gap-2 mt-auto">
+          <div className="mt-auto flex flex-wrap gap-2">
             {techStack.map((tech, idx) => (
               <motion.span
                 key={idx}
@@ -196,7 +196,7 @@ const Projects = () => {
 
       {/* Projects grid */}
       <motion.div 
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10 px-2"
         variants={container}
         initial="hidden"
         animate="show"

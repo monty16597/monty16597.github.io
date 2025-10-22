@@ -4,17 +4,17 @@ import { Link } from 'react-scroll';
 const Hero = () => {
   return (
     <div className="w-full">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex justify-center">
           <motion.div
-            className="flex w-full max-w-3xl flex-col items-center text-center lg:items-start lg:text-left"
+            className="flex w-full max-w-3xl flex-col items-center text-center gap-6 lg:items-start lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div className="w-full space-y-6">
               <motion.h2
-                className="text-neon-blue font-mono text-lg"
+                className="text-neon-blue font-mono text-sm uppercase tracking-[0.3em] sm:text-base"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
@@ -23,7 +23,7 @@ const Hero = () => {
               </motion.h2>
 
               <motion.h1
-                className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
+                className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
@@ -32,7 +32,7 @@ const Hero = () => {
               </motion.h1>
 
               <motion.h2
-                className="text-2xl md:text-4xl font-bold text-gray-400"
+                className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
@@ -41,7 +41,7 @@ const Hero = () => {
               </motion.h2>
 
               <motion.p
-                className="text-gray-400 max-w-2xl mx-auto lg:mx-0"
+                className="text-gray-400 max-w-xl mx-auto text-base sm:text-lg leading-relaxed lg:mx-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
@@ -50,7 +50,7 @@ const Hero = () => {
               </motion.p>
 
               <motion.div
-                className="pt-4 flex w-full flex-wrap justify-center gap-4 lg:justify-start"
+                className="pt-2 flex w-full flex-wrap justify-center gap-4 lg:justify-start"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 0.6 }}

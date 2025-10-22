@@ -11,10 +11,10 @@ const About = () => {
         />
         
         <div className="relative z-10">
-          <div className="flex md:flex-row gap-8 items-center">  
+          <div className="flex flex-col gap-10 md:flex-row md:items-start">
             {/* Bio Content */}
             <motion.div 
-              className=""
+              className="space-y-4"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -27,7 +27,7 @@ const About = () => {
                 Software Engineer - DevOps Engineer
               </h4>
               
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-4 text-gray-300 text-base leading-relaxed">
                 <p>
                   I'm a passionate Software and DevOps Engineer with over 5 years of experience building 
                   scalable cloud infrastructure and developing robust applications. My expertise includes 
@@ -56,7 +56,7 @@ const About = () => {
               </div>
               
               {/* Skills Tags */}
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
                 {["AWS", "Azure", "Kubernetes", "Docker", "Jenkins", "GitHub Actions/Workflows", "Ansible", "Terraform", "Terragrunt", "Keycloak", "Oauth", "SAML", "Windows", "Linux", "MacOs", "Git", "GitHub", "GitLab", "Bitbucket", "Datadog", "Sumologic", "Prometheus", "Grafana", "ELK Stack (ElasticSearch, Logstash, Kibana)", "Cloudwatch", "MySQL", "MongoDB", "DynamoDB", "Redis", "Jira", "Agile", "REST and SOAP APIs", "Java", "Python", "Javascript", "NodeJs", "Golang", "Gradle", "NPM", "PIP", "Native Cloud Architecture", "Solution Architecture"].map((skill, index) => (
                   <motion.span 
                     key={index}
