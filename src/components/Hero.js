@@ -1,90 +1,46 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
+import { 
+  Github, 
+  Linkedin, 
+  Mail, 
+  Terminal, 
+  Globe,
+  MapPin,
+} from 'lucide-react';
 
-const Hero = () => {
+const Hero = ({PROFILE}) => {
   return (
-    <div className="w-full">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-center">
-          <motion.div
-            className="flex w-full max-w-3xl flex-col items-center text-center gap-6 lg:items-start lg:text-left"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="w-full space-y-6">
-              <motion.h2
-                className="text-neon-blue font-mono text-sm uppercase tracking-[0.3em] sm:text-base"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-              >
-                Hey there, myself
-              </motion.h2>
-
-              <motion.h1
-                className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.6 }}
-              >
-                Manjeetsinh Alonja
-              </motion.h1>
-
-              <motion.h2
-                className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-              >
-                I design, build, automate and scale Cloud Infrastructure.
-              </motion.h2>
-
-              <motion.p
-                className="text-gray-400 max-w-xl mx-auto text-base sm:text-lg leading-relaxed lg:mx-0"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8, duration: 0.6 }}
-              >
-                I'm a DevOps and Platform Engineer with a passion for creating scalable and efficient cloud solutions. I specialize in designing robust infrastructure, automating workflows, and ensuring high availability of applications.
-              </motion.p>
-
-              <motion.div
-                className="pt-2 flex w-full flex-wrap justify-center gap-4 lg:justify-start"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.6 }}
-              >
-                <Link
-                  to="projects"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  className="neon-border"
-                >
-                  <button className="px-6 py-3 text-white bg-glass-primary backdrop-blur-md hover:bg-glass-secondary transition-all duration-300 rounded-xl border border-glass-border">
-                    View My Work
-                  </button>
-                </Link>
-
-                <Link
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  className="neon-border"
-                >
-                  <button className="px-6 py-3 text-white bg-transparent hover:bg-glass-primary hover:backdrop-blur-md transition-all duration-300 rounded-xl border border-glass-border">
-                    Contact Me
-                  </button>
-                </Link>
-              </motion.div>
-            </div>
-          </motion.div>
+    <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-20 border-b border-white/5 pb-12">
+      <div>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <span className="text-sm font-medium text-emerald-400 tracking-wider uppercase">Open to Work</span>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">
+          {PROFILE.name}
+        </h1>
+        <p className="text-xl md:text-2xl text-slate-400 font-light mb-6 flex items-center gap-2">
+          <Terminal size={20} className="text-blue-500" /> 
+          {PROFILE.role}
+        </p>
+        <div className="flex flex-wrap gap-4 text-sm text-slate-400">
+          <span className="flex items-center gap-1.5"><MapPin size={16}/> {PROFILE.location}</span>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <a href={`mailto:${PROFILE.email}`} className="hover:text-white transition-colors flex items-center gap-1.5"><Mail size={16}/> {PROFILE.email}</a>
         </div>
       </div>
-    </div>
+
+      <div className="flex gap-4">
+        <a href={PROFILE.socials.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-slate-900 border border-white/10 rounded-xl hover:bg-blue-600 hover:border-blue-500 transition-all group">
+          <Linkedin className="text-slate-400 group-hover:text-white" size={24} />
+        </a>
+        <a href={PROFILE.socials.github} target="_blank" rel="noreferrer" className="p-3 bg-slate-900 border border-white/10 rounded-xl hover:bg-slate-800 transition-all group">
+          <Github className="text-slate-400 group-hover:text-white" size={24} />
+        </a>
+      </div>
+    </header>
   );
 };
-
-export default Hero; 
+export default Hero;
