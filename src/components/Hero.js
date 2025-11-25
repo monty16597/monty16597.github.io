@@ -3,7 +3,6 @@ import {
   Linkedin, 
   Mail, 
   Terminal, 
-  Globe,
   MapPin,
 } from 'lucide-react';
 
