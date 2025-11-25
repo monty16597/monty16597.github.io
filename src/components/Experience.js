@@ -4,7 +4,6 @@ import {
   Briefcase,
 } from 'lucide-react';
 
-
 const Experience = ({EXPERIENCE}) => {
   return (
     <section className="mb-24">
@@ -42,4 +41,5 @@ const Experience = ({EXPERIENCE}) => {
     </section>
   );
 };
+
 export default Experience;

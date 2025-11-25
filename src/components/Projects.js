@@ -2,8 +2,8 @@ import {
   ExternalLink, 
   Cpu
 } from 'lucide-react';
-
 import SectionHeader from './SectionHeader';
+
 
 const Projects = ({ PROJECTS }) => {
   return (

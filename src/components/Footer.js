@@ -3,7 +3,6 @@ import {
   Briefcase,
 } from 'lucide-react';
 
-
 const Footer = (PROFILE) => {
   return (
     <footer className="border-t border-white/5 pt-12 pb-6">

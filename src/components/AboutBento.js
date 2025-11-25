@@ -94,4 +94,5 @@ const AboutBento = ({ PROFILE, CERTIFICATIONS, SKILLS }) => {
     </div>
   );
 };
+
 export default AboutBento;
