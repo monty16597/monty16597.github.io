@@ -1,92 +1,70 @@
-# Dark Glassmorphic Portfolio Website
+# Getting Started with Create React App
 
-A modern portfolio website built with React and Tailwind CSS, featuring a stunning dark glassmorphic design.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Project Screenshot](screenshot.png)
+## Available Scripts
 
-## Design Philosophy
+In the project directory, you can run:
 
-This website embraces the glassmorphic design trend with a dark theme, creating an elegant, futuristic, and immersive user experience. The design philosophy includes:
+### `npm start`
 
-- **Dark Glassmorphic UI**: Semi-transparent glass-like elements with subtle blur effects
-- **Neon Accent Colors**: Vibrant accent colors that provide visual interest and highlight important elements
-- **Subtle Animations**: Smooth animations and transitions that enhance the user experience without being distracting
-- **Interactive Elements**: Responsive and dynamic components that react to user interactions
-- **Layered Design**: Creating depth through overlapping translucent elements
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Features
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Responsive layout that works on all devices
-- Interactive background elements with particle animations
-- Smooth scroll navigation
-- Motion effects and animations using Framer Motion
-- Glassmorphic UI components
-- Dark theme with neon accents
-- Contact form
+### `npm test`
 
-## Technology Stack
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- React.js
-- Tailwind CSS
-- Framer Motion for animations
-- React Scroll for smooth navigation
-- Material Tailwind components
-- Three.js for 3D elements
-- Responsive design for all screen sizes
+### `npm run build`
 
-## Getting Started
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Prerequisites
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Node.js (v14 or higher)
-- npm or yarn
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Installation
+### `npm run eject`
 
-1. Clone the repository
-```
-git clone https://github.com/yourusername/dark-glassmorphic-portfolio.git
-cd dark-glassmorphic-portfolio
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. Install dependencies
-```
-npm install
-# or
-yarn install
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. Start the development server
-```
-npm start
-# or
-yarn start
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Customization
+## Learn More
 
-- Update personal information in the components
-- Modify the color scheme in the `tailwind.config.js` file
-- Add your own projects in the `Projects.js` component
-- Update skills and experience in their respective components
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Deployment
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-This website can be easily deployed to platforms like Netlify, Vercel, or GitHub Pages.
+### Code Splitting
 
-```
-npm run build
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## License
+### Analyzing the Bundle Size
 
-MIT License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Acknowledgments
+### Making a Progressive Web App
 
-- Design inspiration from modern glassmorphic UI trends
-- Icons provided by React Icons
-- Fonts from Google Fonts
-# portfolio-web
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
